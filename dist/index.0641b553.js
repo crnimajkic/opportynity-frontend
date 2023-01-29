@@ -577,11 +577,13 @@ class JobSearch {
     }
     setCountryCode() {
         this.countryCode = "gb";
-        // this.setCurrencyCode()
-        fetch("http://ip-api.com/json").then((results)=>results.json()).then((results)=>{
-            // this.countryCode = results.countryCode.toLowerCase()
-            this.setCurrencySymbol();
-        });
+    // this.setCurrencyCode()
+    // fetch('http://ip-api.com/json')
+    //     .then(results => results.json())
+    //     .then(results => {
+    //         // this.countryCode = results.countryCode.toLowerCase()
+    //         this.setCurrencySymbol()
+    //     })
     }
     setCurrencySymbol() {
         this.currencySymbol = (0, _utils.getCurrencySymbol)(this.countryCode);

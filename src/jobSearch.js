@@ -14,13 +14,13 @@ export class JobSearch {
     setCountryCode() {
         this.countryCode = 'gb'
         // this.setCurrencyCode()
-        fetch('http://ip-api.com/json')
-            .then(results => results.json())
-            .then(results => {
-                // this.countryCode = results.countryCode.toLowerCase()
+        // fetch('http://ip-api.com/json')
+        //     .then(results => results.json())
+        //     .then(results => {
+        //         // this.countryCode = results.countryCode.toLowerCase()
 
-                this.setCurrencySymbol()
-            })
+        //         this.setCurrencySymbol()
+        //     })
     }
 
     setCurrencySymbol() {

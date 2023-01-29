@@ -592,11 +592,14 @@ class JobSearch {
             this.startLoading();
             this.resultsContainer.innerHTML = "";
             const { search , location  } = (0, _utils.extractFormData)(this.searchForm);
-            fetch(`http://localhost:3000/?search=${search}&location=${location}&country=${this.countryCode}`).then((results)=>results.json()).then(({ results  })=>{
+            fetch(`https://opportunity-api/onrender.com/?search=${search}&location=${location}&country=${this.countryCode}`).then((results)=>results.json()).then(({ results  })=>{
                 return results.map((job)=>(0, _templates.jobTemplate)(job, this.currencySymbol));
             }).then((jobs)=>{
                 this.stopLoading();
                 this.resultsContainer.innerHTML = jobs;
+            }).catch((err)=>{
+                console.log(err);
+                this.stopLoading();
             });
         });
     }

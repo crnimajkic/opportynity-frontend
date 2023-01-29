@@ -1,0 +1,70 @@
+header{
+    padding: 50px;
+    background-image: url(../images/hero\ 1.png);
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-bottom: 30px;
+}
+h1{
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 10px;
+}
+
+form{
+    margin-top: 50px;
+    max-width: 400px;
+}
+
+.loading-element{
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    &.loading{
+        display: block;
+    }
+}
+
+.spiner{
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: #8BC34A !important;
+}
+
+a{
+    color: #8BC34A;
+    font-weight: bold;
+}
+
+h4{
+    font-weight: bold;
+}
+.underline{
+    display: flex;
+}
+
+.gb{
+    width: 30px;
+    height: 30px;
+}
